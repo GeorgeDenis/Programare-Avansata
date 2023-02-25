@@ -24,6 +24,7 @@ public class Main {
             }
             result = sum;
         }
+        result = result * 6;
         System.out.println("Willy-nilly, this semester I will learn " + languages[result] + ".");
 
     }
