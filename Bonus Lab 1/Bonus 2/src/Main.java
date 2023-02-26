@@ -3,7 +3,11 @@ public class Main {
 
         int nrNoduri = Integer.parseInt(args[0]);
         int grad = Integer.parseInt(args[1]);
-
+        if(nrNoduri<0 || grad<0)
+        {
+            System.out.println("Argumentele introduse nu pot fi negative: " + nrNoduri + " " + grad);
+            System.exit(1);
+        }
         if(grad >= nrNoduri)
         {
             System.out.println("Gradul nodurilor nu poate fi mai mare sau egal cu numarul de noduri");
