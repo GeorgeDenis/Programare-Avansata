@@ -48,6 +48,11 @@ public class Main {
             System.out.println("Argumentul introdus nu este un int: " + args[0]);
             System.exit(1);
         }
+        if(n<0)
+        {
+            System.out.println("Argumentul introdus nu poate fi negativ: " + args[0]);
+            System.exit(1);
+        }
         return n;
     }
     public static int[][] creareMatrice(int n)
