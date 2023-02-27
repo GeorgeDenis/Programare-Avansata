@@ -10,7 +10,7 @@ public class Main {
                 StringBuilder coloana = new StringBuilder();
                 for (int j = 0; j < n; j++) {
                     linie.append(matrice[i][j]);
-                    coloana.append(matrice[i][j]);
+                    coloana.append(matrice[j][i]);
 
                 }
                 System.out.println(linie);
