@@ -1,16 +1,16 @@
 public class Airports extends Location{
-    private int number_of_terminals;
+    private int numberOfTerminals;
 
-    public Airports(String name, double xCoord, double yCoord, int number_of_terminals) {
+    public Airports(String name, double xCoord, double yCoord, int numberOfTerminals) {
         super(name, xCoord, yCoord);
-        this.number_of_terminals = number_of_terminals;
+        this.numberOfTerminals = numberOfTerminals;
     }
 
-    public void setNumber_of_terminals(int number_of_terminals) {
-        this.number_of_terminals = number_of_terminals;
+    public void setNumber_of_terminals(int numberOfTerminals) {
+        this.numberOfTerminals = numberOfTerminals;
     }
-    public int getNumber_of_terminals() {
-        return number_of_terminals;
+    public int getNumberOfTerminals() {
+        return numberOfTerminals;
     }
     /**
      *Această metodă înlocuiește metoda implicită toString pentru a oferi o reprezentare șir a obiectului Airports.
@@ -21,6 +21,6 @@ public class Airports extends Location{
     public String toString() {
         return "Airports{" + "name=" + getName() + ", xCoord= "
                 + getX() + ", yCoord=" + getY() + ", number of terminals=" +
-                getNumber_of_terminals() + '}';
+                getNumberOfTerminals() + '}';
     }
 }
