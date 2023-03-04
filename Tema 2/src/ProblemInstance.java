@@ -11,6 +11,21 @@ public class ProblemInstance {
         locationsCount = 0;
         roadsCount = 0;
     }
+    public int getLocationsCount() {
+        return locationsCount;
+    }
+
+    public void setLocationsCount(int locationsCount) {
+        this.locationsCount = locationsCount;
+    }
+
+    public int getRoadsCount() {
+        return roadsCount;
+    }
+
+    public void setRoadsCount(int roadsCount) {
+        this.roadsCount = roadsCount;
+    }
     /**
      *Adaugam in vectorul de locatii, locatia data de utilizator daca aceasta nu exista deja
      * Daca locatia exista deja, afisam pe ecran un mesaj
