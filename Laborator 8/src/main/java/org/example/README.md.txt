@@ -1,3 +1,4 @@
+*Am folosit un script pentru a crea tabele in baza de date in PostgreSQL
 *Am creat clasa Database ce creeaza conexiunile cu baza de date
 *Am creat clasa ArtistDAO ce imi permite sa creez linii noi in tabelul artists, sa caut un artist dupa nume sau id
 *In main am facut teste asupra metodelor de creare, cautare dupa nume, cautare dupa id in cadrul tabelei artists
