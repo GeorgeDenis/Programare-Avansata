@@ -6,7 +6,10 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "artists")
-@NamedQuery(name = "Artist.findAll", query = "SELECT a FROM Artist a ORDER BY a.name")
+@NamedQueries({
+        @NamedQuery(name = "Artist.findByName", query = "SELECT a FROM Artist a WHERE a.name LIKE :name"),
+        @NamedQuery(name = "Artist.findAll", query = "SELECT a FROM Artist a ORDER BY a.name")
+})
 
 public class Artist implements Serializable {
     @Id
