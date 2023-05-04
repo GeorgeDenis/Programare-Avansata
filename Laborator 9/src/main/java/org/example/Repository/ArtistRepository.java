@@ -50,7 +50,7 @@ public class ArtistRepository {
      */
     public List<Artist> findByName(String name){
         EntityManager em = EntityManagerFactoryUtil.getEntityManagerFactory().createEntityManager();
-        TypedQuery<Artist> query = em.createNamedQuery("Artist.findAll", Artist.class);
+        TypedQuery<Artist> query = em.createNamedQuery("Artist.findByName", Artist.class);
         List<Artist> artists = query.getResultList();
         em.close();
         return artists;
