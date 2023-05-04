@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Found artist: " + foundArtist.getName());
         
         List<Artist> foundArtistByName = artistRepository.findByName(newArtist.getName());
-        System.out.println("Found artist: " + newArtist.getName());
+        System.out.println("Found artist: " + foundArtistByName.getName());
 
         List<Artist> artists = artistRepository.findAll();
         System.out.println("All artists: ");
