@@ -43,4 +43,16 @@ public class ArtistRepository {
         em.close();
         return artists;
     }
+    /**
+     * Metoda returneaza o lista de artisti cu un nume dat
+     * @param name
+     * @return
+     */
+    public List<Artist> findByName(String name){
+        EntityManager em = EntityManagerFactoryUtil.getEntityManagerFactory().createEntityManager();
+        TypedQuery<Artist> query = em.createNamedQuery("Artist.findAll", Artist.class);
+        List<Artist> artists = query.getResultList();
+        em.close();
+        return artists;
+    }
 }
