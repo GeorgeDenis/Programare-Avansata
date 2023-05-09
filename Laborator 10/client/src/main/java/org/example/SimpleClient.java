@@ -35,7 +35,7 @@ public class SimpleClient {
                 }
                 out.println(cmd);
                 if (cmd.equals("stop")) {
-                    System.out.print("exiting...");
+                    System.out.print("stopping...");
                     break;
                 }
                 String response = in.readLine();
